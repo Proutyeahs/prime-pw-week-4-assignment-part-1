@@ -96,8 +96,17 @@ console.log(sumAll())
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
-
-
+let numbers = [1, 23, 4, -5, 0]
+function positiveArray( array ) {
+  let posArray = [];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] > 0) {
+      posArray.push(array[i])
+    }
+  }
+  return posArray;
+}
+console.log(positiveArray(numbers))
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
