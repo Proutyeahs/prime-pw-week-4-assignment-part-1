@@ -40,6 +40,7 @@ function isPositive( number ) {
   }
     return false;
 }
+
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
 console.log( 'isPositive - should say true', isPositive(3) );
@@ -55,7 +56,7 @@ function getLast( array ) {
   }
   return;
 }
-console.log(getLast())
+console.log(getLast([1,2,3]))
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
@@ -69,6 +70,8 @@ function find( value, array ){
     }
   }
 }
+console.log(find(1, [1,2,3]))
+
 // ----------------------
 // Stretch Goals
 // ----------------------
@@ -92,11 +95,11 @@ function sumAll( ) {
     }// TODO: loop to add items
   return sum;
 }
-console.log(sumAll())
+console.log(sumAll(1,2,3))
+
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
-let numbers = [1, 23, 4, -5, 0]
 function positiveArray( array ) {
   let posArray = [];
   for (let i = 0; i < array.length; i++) {
@@ -106,8 +109,12 @@ function positiveArray( array ) {
   }
   return posArray;
 }
-console.log(positiveArray(numbers))
+console.log(positiveArray([1,2,3,0,-1]))
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
+function coneVolume(h, r) {
+	let answer = (Math.PI * r**2 * h/3)
+	return answer;
+}
