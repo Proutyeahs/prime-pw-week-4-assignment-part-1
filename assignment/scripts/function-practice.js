@@ -64,13 +64,12 @@ console.log(getLast([1,2,3]))
 function find( value, array ){
   for (let i = 0; i < array.length; i++) {
     if (array[i] === value) {
-      return true;
-    } else {
-      return false;
-    }
-  }
+    return true;
+    } 
+  } 
+  return false;
 }
-console.log(find(1, [1,2,3]))
+console.log(find(2, [1,2,3]))
 
 // ----------------------
 // Stretch Goals
@@ -115,7 +114,7 @@ console.log(positiveArray([1,2,3,0,-1]))
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
 function coneVolume(h, r) { // Creating a function that takes in the hight and radius of a cone to output its volume.
-	let answer = Math.round(100*(Math.PI * r**2 * h/3))/100 // Created a variable called answer and assigned the equation for the volume of a cone. Rounded the answer to 2 decimal points.
-	return answer // Return the answer
+	let answer = Math.round(100*(Math.PI * r**2 * h/3))/100; // Created a variable called answer and assigned the equation for the volume of a cone. Rounded the answer to 2 decimal points.
+	return answer; // Return the answer
 }
 console.log(coneVolume(1,2)) // console log the function with the hight and radius of a cone as the parameters.
