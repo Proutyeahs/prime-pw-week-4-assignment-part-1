@@ -114,7 +114,8 @@ console.log(positiveArray([1,2,3,0,-1]))
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
-function coneVolume(h, r) {
-	let answer = (Math.PI * r**2 * h/3)
-	return answer;
+function coneVolume(h, r) { // Creating a function that takes in the hight and radius of a cone to output its volume.
+	let answer = Math.round(100*(Math.PI * r**2 * h/3))/100 // Created a variable called answer and assigned the equation for the volume of a cone. Rounded the answer to 2 decimal points.
+	return answer // Return the answer
 }
+console.log(coneVolume(1,2)) // console log the function with the hight and radius of a cone as the parameters.
